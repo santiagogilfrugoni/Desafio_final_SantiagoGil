@@ -40,27 +40,8 @@ a {
 
 
 /* -----Header ----- */
-.header-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center ;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.navigation-items {
-    transition: 0.5s;
-    font-weight: bold;
-}
-
-.navigation-items:hover {
-    font-size: 125%;
-}
-
-.brand-container {
-    display: flex;
-    align-items: center ;
-    flex-wrap: wrap ;
+.navbar {
+    justify-content: center;
 }
 
 
@@ -68,7 +49,7 @@ a {
     width: 150px;
     height: 130px;
     top: 25px;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -172,16 +153,11 @@ footer {
     background-image: radial-gradient(#a2adca, #5f7096);
     padding: 20px;
     color: white;
-    border-radius: 10%;
-    transition: all 0.5s ease-out;
+    /* border-radius: 10%;
+    transition: all 0.5s ease-out; */
 
 }
 
-.services-paragraf:hover {
-    border-radius: 100%;
-    padding: 40px;
-
-}
 
 /* ----- Fin de body index ------ */
 
