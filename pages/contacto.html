@@ -1,128 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AIM/Burke</title>
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../style.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../style.css">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    </head>
 
-    <!-- Bootstrap-->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
-</head>
-<body>
-<!-- Header -->
-<header class="header-container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-        <!-- Logo --> 
-        <img class="navbar-brand img-fluid" id="logo" src="../content/Logo.png" alt="logo"> 
-        <!-- Market Research & Market Intelligence -->
-        <a class="navbar-brand fs-4" href="#">Market Research & <br> Market Intelligence</a>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <nav>
+                <a class="logo-container" href="../index.html">
+                    <img src="../content/Logo.png" alt="Logo">
+                    <h1>Market Research &<br>Market Intelligence</h2>         
+                </a>
+                
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="../pages/servicios.html">Servicios</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/testimonio_clientes.html">Testimonio de clientes</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>  
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- BODY -->
+    <body>
 
-        <!-- Menu de navegacion -->
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-            <a class="nav-link active fs-5" aria-current="../pages/servicios.html" href="#">Servicios</a>
-            <a class="nav-link active fs-5" href="../pages/nosotros.html">Nosotros</a>
-            <a class="nav-link active fs-5" href="../pages/testimonio_clientes.html">Testimonio de clientes</a>
-            <a class="nav-link active fs-5" href="../pages/contacto.html">Contacto</a>
+        <!-- FORMULARIO DE CONTACTO -->
+        <section class="contactUs-section">
+            <div class="contactUs-container">
+                <h2>Contáctanos</h2>     
+                <div class="contactUs-content">
+                    <div class="contactForm-container">
+                            <form class="contactForm-grid"> 
+                                <input class="form-item input-name" type="text" name="name" placeholder="Nombre">
+                                <input class="form-item input-lastname" type="text" name="lastname" placeholder="Apellido">
+                                <input class="form-item input-email" type="email" name="email" placeholder="Email">
+                                <input class="form-item input-phone" type="tel" name="phone" placeholder="Teléfono">
+                                <input class="form-item input-subject" type="subjet" name="subject" placeholder="Asunto">
+                                <textarea class="form-item input-message" name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                                <button class="form-item button-send">Enviar</button>       
+                            </form>
+                            <div class="info-container">
+                                <div class="info-content">
+                                    <ul>
+                                        <li>correo@correo.com</li>
+                                        <li>Montevideo, Uruguay</li>
+                                        <li>Blvd. España 2997 piso 8</li>
+                                    </ul>
+                                </div>
+                                <div class="location-content">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.6585861250933!2d-56.15117488416752!3d-34.915016481543894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81725d25e093%3A0x89a242073d6fdd42!2sBlvr.%20Espa%C3%B1a%202997%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1sen!2suy!4v1642544032005!5m2!1sen!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                                    </iframe>
+                                </div>
+                                
+                            </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION UBICACION -->
+        <!-- <section id="location-container">
+            <h2 style="text-align: center; margin: 0;">Ubicación</h2>
+            <div id="location">
+                
+            </div>
+        </section> -->
+
+    </body>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <img src="../content/icons/email.png" alt="">
+                <p>correo@correo.com</p>
+            </div>
+            <div>
+                <img class="img-footer"  src="../content/icons/location.png" alt="">
+                <p>Blvd. España 2997 piso 8. Montevideo, Uruguay</p>
+            </div>
+            <div>
+                <img src="../content/icons/website.png" alt="">
+                <p>www.aimburke.com</p>
             </div>
         </div>
-        </div>
-    </nav>
-</header>
-<!-- Fin del header -->
+    </footer>
 
-
-<!-- Inicio del main -->
-<main>
-<!-- Seccion formulario de contacto -->
-    <section id="contact-container">
-
-        <h2 style="text-align: center; margin: 0;" >Contáctanos</h2>
-        <!-- Formlario de contacto -->
-        <div id="contact-form"> <!-- Seccion formulario --> 
-            <form action="">
-
-                <div class="form-items">
-                    <label>Nombre completo</label>
-                    <input type="text" name="name">
-                </div>
-                <div class="form-items">
-                    <label>Correo</label>
-                    <input type="email" name="email">
-                </div>
-                <div class="form-items">
-                    <label>Teléfono</label>
-                    <input type="tel" name="phone">
-                </div>
-                <div class="form-items">
-                    <label\>Mensaje</label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <button>Enviar</button> 
-                </div>        
-                
-            </form>    
-        </div>
-        <!-- Fin de seccion formulario-->
-    </section>
-
-<!-- Fin de seccion formulario de contacto -->
-
-<!-- Seccion google maps -->
-<section id="location-container">
-    <h2 style="text-align: center; margin: 0;">Ubicación</h2>
-    <div id="location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.6585861250933!2d-56.15117488416752!3d-34.915016481543894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81725d25e093%3A0x89a242073d6fdd42!2sBlvr.%20Espa%C3%B1a%202997%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1sen!2suy!4v1642544032005!5m2!1sen!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </div>
-</section>
-<!-- Fin de seccion google maps -->
-
-</main>
-<!-- Fin del main -->
-
-   <!-- Pie de pagina -->
-<footer>
-
-    <div class="footer-content">
-        <img class="img-footer" src="../content/icons/email.png" alt="">
-            <p class="footer-paragraf">
-                correo@correo.com
-            </p>
-    </div>
-    <div class="footer-content">
-        <img class="img-footer"  src="../content/icons/location.png" alt="">
-            <p class="footer-paragraf">
-                Blvd. España 2997 piso 8. Montevideo, Uruguay
-            </p>
-    </div>
-    <div class="footer-content">
-        <img class="img-footer"  src="../content/icons/website.png" alt="">
-            <p class="footer-paragraf">
-                www.aimburke.com
-            </p>
-    </div>
-    
-    
-    
-</footer>
-<!--- Fin del pie de pagina -->
-
-    
-</body>
 </html>
